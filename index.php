@@ -1,3 +1,7 @@
+<?php
+include_once "navbar.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +11,7 @@
   <title>Home</title>
 </head>
 <body>
-  <h1>Customer relationship management system</h1>
+ 
   
 </body>
 </html>
