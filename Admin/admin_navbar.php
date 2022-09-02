@@ -13,40 +13,31 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-info text-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php"><h3>Navbar</h3></a>
+    <a class="navbar-brand" href="#"><h3>Navbar</h3></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse " id="navbarNav">
-      <ul class="navbar-nav ms-auto me-5 ">
+    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+      <ul class="navbar-nav  me-5 text-dark">
 
-      <div class="nav-link">
-    <form class="d-flex">
-      <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-
-
-        <li class="nav-item mx-3">
-       <a href=""><i class="fa-solid fa-cart-arrow-down nav-link fa-2x"></i></a> 
+        <li class="nav-item mx-3" >
+       <a class="text-dark" href="product-upload.php" style="text-decoration: none;"><b>Upload product</b></a> 
         </li>
         <li class="nav-item mx-3">
-        <a href="registration_form.php"><i class="fa-solid fa-circle-user nav-link fa-2x"></i></a>
+        <a class="text-dark" href="" style="text-decoration: none;"><b>Confirmed order</b></a>
         </li>
-
-        <li><a href="logout.php">Logout</a></li>
+        <li class="nav-item mx-3">
+        <a class="text-dark" href="chat_list.php" style="text-decoration: none;"><b>Chats</b></a>
+        </li>
         
       </ul>
-
-      
-
+    </div>
+    <div>
+      <a  href="logout.php" style="text-decoration: none;">Logout</a>
     </div>
   </div>
 </nav>
   
-
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

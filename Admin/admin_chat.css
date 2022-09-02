@@ -1,0 +1,92 @@
+.card-bordered {
+  border: 1px solid #ebebeb;
+}
+
+.card {
+  border: 0;
+  border-radius: 0px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.03);
+  transition: .5s;
+}
+
+.padding {
+  padding: 3rem !important
+}
+
+
+
+
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(77,82,89,0.07);
+}
+
+.card-header .card-title {
+  padding: 0;
+  border: none;
+}
+
+h4.card-title {
+  font-size: 17px;
+}
+
+
+
+
+
+.avatar {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 100%;
+  background-color: #f5f6f7;
+  color: #8b95a5;
+  text-transform: uppercase;
+}
+
+.chat-msg{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.msg-txt-received
+{
+  background-color: #8b95a5;
+  padding: 5px;
+  border-radius: 10px 10px 10px 10px;
+
+}
+
+.chat-msg-div-sender
+{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.msg-txt-send
+{
+  background-color: lightblue;
+  padding: 5px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
