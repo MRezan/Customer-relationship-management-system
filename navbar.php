@@ -1,3 +1,7 @@
+<?php 
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +39,22 @@
         <a href="registration_form.php"><i class="fa-solid fa-circle-user nav-link fa-2x"></i></a>
         </li>
 
-        <li><a href="logout.php">Logout</a></li>
+       <?php
+       if(empty($_SESSION['userid']))
+       {
+        echo "<li class='nav-item mx-3'>
+        <a href='login_form.php'><i class='fa fa-sign-in nav-link fa-2x'></i></a>
+        </li>";
+       }
+       else
+       {
+        echo "<li class='nav-item mx-3'>
+        <a href='logout.php'><i class='fa fa-sign-out nav-link fa-2x'></i></a>
+        </li>";
+       }
+       ?>
+
+       
         
       </ul>
 
