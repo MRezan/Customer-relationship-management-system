@@ -32,11 +32,21 @@ $product_id = $_GET['id'];
      ";
 
      echo "<a class='btn btn-primary' href='user_chat.php?id=$data[product_id]' style='text-decoration: none;'>Chat</a>
+     <a class='btn btn-primary add-cart' href='add_cart.php?id=$data[product_id]' style='text-decoration: none;'>Add to cart</a>
+     
+
      ";
 ?>
 
 
 
+
+
+<script>
+  document.querySelector(".add-cart").addEventListener('click', function(){
+    alert("product added successfully");
+  })
+</script>
   
 </body>
 </html>

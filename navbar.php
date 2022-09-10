@@ -29,7 +29,7 @@
 
 
         <li class="nav-item mx-3">
-       <a href=""><i class="fa-solid fa-cart-arrow-down nav-link fa-2x"></i></a> 
+       <a href="/Customer relationship management system/Users/cart.php"><i class="fa-solid fa-cart-arrow-down nav-link fa-2x"></i></a> 
         </li>
         <li class="nav-item mx-3">
         <a href="registration_form.php"><i class="fa-solid fa-circle-user nav-link fa-2x"></i></a>

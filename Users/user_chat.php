@@ -29,7 +29,7 @@ include_once "../navbar.php";
            $user_id = $_SESSION['userid'];
            $product_id= $_GET['id'];
 
-          $sql="SELECT * FROM messages WHERE user_id = '$user_id' AND product_id = '$product_id' OR user_type='admin' ";
+          $sql="SELECT * FROM messages WHERE user_id = '$user_id' AND product_id = '$product_id' ";
 
           $returnObj=$conn->query($sql);
           

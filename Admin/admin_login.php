@@ -25,7 +25,7 @@ if($returnObj->rowCount()==1){
         $_SESSION['phone_num']=$user['user_phn_number'];
        
     }
-    header("location: product_upload.php");
+    header("location: product-upload.php");
 
 
   }

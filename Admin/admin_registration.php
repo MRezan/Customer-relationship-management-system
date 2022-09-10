@@ -55,7 +55,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 
     move_uploaded_file($temp_file_path,$to);
 
-    header("location: login_form.php");
+    header("location: admin_login_form.php");
 
     
 
