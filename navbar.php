@@ -35,9 +35,29 @@ session_start();
         <li class="nav-item mx-3">
        <a href="/Customer relationship management system/Users/cart.php"><i class="fa-solid fa-cart-arrow-down nav-link fa-2x"></i></a> 
         </li>
-        <li class="nav-item mx-3">
+
+        <?php
+        if(empty($_SESSION['username']))
+        {
+        echo "<li class='nav-item mx-3'>
+        <a href='/Customer relationship management system/Users/registration_form.php'><i class='fa-solid fa-circle-user nav-link fa-2x'></i></a>
+        </li>";
+
+        }
+        else
+        {
+          echo "<li class='nav-item mx-3'>
+        <a href='/Customer relationship management system/Users/profile.php'><i class='fa-solid fa-circle-user nav-link fa-2x'></i></a>
+        </li>";
+
+        }
+
+        ?>
+
+
+        <!-- <li class="nav-item mx-3">
         <a href="registration_form.php"><i class="fa-solid fa-circle-user nav-link fa-2x"></i></a>
-        </li>
+        </li> -->
 
        <?php
        if(empty($_SESSION['userid']))

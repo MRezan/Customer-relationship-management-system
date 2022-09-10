@@ -1,12 +1,13 @@
 <?php
-session_start();
+include_once "../navbar.php";
+
 
 if(empty($_SESSION['userid']))
 {
   header("Location: login_form.php");
 }
 
-include_once "../navbar.php";
+
 ?>
 <link rel="stylesheet" href="user_chat.css">
 

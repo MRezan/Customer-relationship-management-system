@@ -23,6 +23,8 @@ if($returnObj->rowCount()==1){
         $_SESSION['useremail']=$user['user_email'];
         $_SESSION['userid']=$user['user_id'];
         $_SESSION['phone_num']=$user['user_phn_number'];
+        $_SESSION['user_image']=$user['user_image'];
+        $_SESSION['user_address']=$user['user_address'];
        
     }
     header("location: index.php");
