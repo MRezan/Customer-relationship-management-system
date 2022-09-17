@@ -20,20 +20,27 @@
     <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
       <ul class="navbar-nav  me-5 text-dark">
 
-        <li class="nav-item mx-3" >
-       <a class="text-dark" href="product-upload.php" style="text-decoration: none;"><b>Upload product</b></a> 
+        <li class="nav-item mx-5" >
+       <a class="text-dark" href="product-upload.php" style="text-decoration: none;">
+       <i class='fa-solid fa-upload fa-2x'></i>
+      </a> 
         </li>
-        <li class="nav-item mx-3">
-        <a class="text-dark" href="" style="text-decoration: none;"><b>Confirmed order</b></a>
+        <li class="nav-item mx-5">
+
+        <a class="text-dark" href="" style="text-decoration: none;">
+        <i class="fa-sharp fa-solid fa-circle-check fa-2x"></i></a>
         </li>
-        <li class="nav-item mx-3">
-        <a class="text-dark" href="chat_list.php" style="text-decoration: none;"><b>Chats</b></a>
+
+        <li class="nav-item mx-5">
+        <a class="text-dark" href="chat_list.php" style="text-decoration: none;">
+        <i class="fa-solid fa-comments fa-2x"></i>
+        </a>
         </li>
         
       </ul>
     </div>
     <div>
-      <a  href="logout.php" style="text-decoration: none;">Logout</a>
+      <a  href="logout.php" style="text-decoration: none;"><i class='fa fa-sign-out nav-link fa-2x text-dark'></i></a>
     </div>
   </div>
 </nav>

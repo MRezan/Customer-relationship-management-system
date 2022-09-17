@@ -12,7 +12,7 @@ include "../dbh.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
+<body class="bg-light">
 
 <?php
 
@@ -25,18 +25,44 @@ $product_id = $_GET['id'];
    
 
      $data=$returnObj->fetch();
+
+
      echo "
-     <h1>$data[product_name]</h1>
-     <p>$data[product_details]</p>
-     <h6>$data[product_price]</h6>
-     ";
-
-     echo "<a class='btn btn-primary' href='user_chat.php?id=$data[product_id]' style='text-decoration: none;'>Chat</a>
-     <a class='btn btn-primary add-cart' href='add_cart.php?id=$data[product_id]' style='text-decoration: none;'>Add to cart</a>
      
+<section class='container mt-5 mb-5  p-5'>
+<div class='row'>
+    <div class='col-8 p-5  '>
+        <h1>$data[product_name]</h1>
+        <p>$data[product_details]
+        </p>
+        <h3>$data[product_price]</h3>
+        <div class='d-flex justify-content-between w-75'>
+            <a class='btn btn-primary' href='add_cart.php?id=$data[product_id]'>Add to Cart</a>
+            <a class='btn btn-primary' href='payment_page.php?id=$data[product_id]&&price=$data[product_price]&&product_name=$data[product_name]'>Buy Now</a>
+            <a class='btn btn-primary' href='user_chat.php?id=$data[product_id]'>Chat</a>
+        </div>
 
+    </div>
+    <div class='col-4 p-2'>
+        <img class='img-fluid' src='../Admin/images/$data[product_image]' alt=''>
+    </div>
+</div>
+
+</section>
      ";
+
+
+
 ?>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -48,5 +74,10 @@ $product_id = $_GET['id'];
   })
 </script>
   
+
+<?php
+include "../footer.php";
+
+?>
 </body>
 </html>

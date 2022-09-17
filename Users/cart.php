@@ -1,5 +1,11 @@
 <?php
-include "../navbar.php"
+include "../navbar.php";
+if(empty($_SESSION['userid']))
+{
+  header("Location: login_form.php");
+}
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

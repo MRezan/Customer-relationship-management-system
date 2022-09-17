@@ -12,5 +12,3 @@ catch(PDOException $e)
 
 }
 
-
-

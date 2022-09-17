@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if(empty($_SESSION['userid']))
+{
+  header("Location: admin_login_form.php");
+}
 include_once "admin_navbar.php";
 ?>
 <link rel="stylesheet" href="admin_chat.css">
@@ -18,13 +24,13 @@ include_once "admin_navbar.php";
           <div class="" id="chat-content" style="overflow-y: scroll !important; height:400px !important;">
 
            <?php
-           session_start();
+           
            include "../dbh.php";
            $user_id = $_GET['user_id'];
            $admin_id= $_SESSION['userid'];
            $product_id= $_GET['product_id'];
 
-          $sql="SELECT * FROM messages WHERE user_id = '$user_id' OR user_id = '$admin_id' AND product_id = '$product_id'";
+          $sql="SELECT * FROM messages WHERE user_id = '$user_id' OR admin_id = '$admin_id' AND product_id = '$product_id'";
 
           $returnObj=$conn->query($sql);
           

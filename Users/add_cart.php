@@ -1,5 +1,10 @@
 <?php
 session_start();
+if(empty($_SESSION['userid']))
+{
+  header("Location: login_form.php");
+}
+
 include "../dbh.php";
 
 $product_id= $_GET['id'];

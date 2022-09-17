@@ -29,8 +29,9 @@ if(empty($_SESSION['userid']))
            include "../dbh.php";
            $user_id = $_SESSION['userid'];
            $product_id= $_GET['id'];
+           $user_image = $_SESSION['user_image'];
 
-          $sql="SELECT * FROM messages WHERE user_id = '$user_id' AND product_id = '$product_id' ";
+          $sql="SELECT * FROM messages WHERE user_id = '$user_id' AND product_id = '$product_id' OR user_type = 'admin' ";
 
           $returnObj=$conn->query($sql);
           
@@ -49,7 +50,7 @@ if(empty($_SESSION['userid']))
                 echo "
                 <div class='chat-msg-div chat-msg-div-sender'>
               <div class='chat-msg '>
-                <img class='avatar' src='https://img.icons8.com/color/36/000000/administrator-male.png' alt='...'>
+                <img class='avatar mx-2' src='profile_image/$user_image' alt='...'>
                 <span class='msg-txt-send'>$row[msg]</span>
               </div>
               </div>
