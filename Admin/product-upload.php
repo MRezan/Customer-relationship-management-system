@@ -63,13 +63,24 @@ include_once "admin_navbar.php";
                   <label class="mb-3 mr-1" for="gender">Category: </label>
 
                   <input type="radio" class="btn-check" name="product-category" id="Womens-Fashion" autocomplete="off" value="Womens-Fashion" required>
-                  <label class="btn btn-outline-success mx-3" for="Womens-Fashion">Women's Fashion</label>
+                  <label class="btn btn-outline-success mx-3" for="Womens-Fashion">Women's</label>
                   <input type="radio" class="btn-check" name="product-category" id="health-and-beauty" autocomplete="off" value="health-and-beauty" required>
-                  <label class="btn btn-outline-danger mx-3" for="health-and-beauty">Health & Beauty</label>
+                  <label class="btn btn-outline-danger mx-3" for="health-and-beauty">H & B</label>
                   <input type="radio" class="btn-check" name="product-category" id="Electronics" autocomplete="off" value="electronics" required>
                   <label class="btn btn-outline-info mx-3" for="Electronics">Electronics</label>
                   <input type="radio" class="btn-check" name="product-category" id="foods" autocomplete="off" value="foods" required>
                   <label class="btn btn-outline-secondary mx-3" for="foods">Foods</label>
+
+                  <input type="radio" class="btn-check" name="product-category" id="books" autocomplete="off" value="books" required>
+                  <label class="btn btn-outline-secondary mx-3" for="books">books</label>
+
+                  <input type="radio" class="btn-check" name="product-category" id="sports" autocomplete="off" value="sports" required>
+                  <label class="btn btn-outline-secondary mx-3" for="sports">sports</label>
+
+
+                  <input type="radio" class="btn-check" name="product-category" id="baby" autocomplete="off" value="baby" required>
+                  <label class="btn btn-outline-secondary mx-3" for="baby">Baby</label>
+
                 </div>
               </div>
 

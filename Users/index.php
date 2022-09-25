@@ -18,7 +18,15 @@ include "../dbh.php";
     <style>
         .card {
             transition: transform .5s;
+           
+            
         }
+        .product-img
+        {
+            height: 250px;
+            width: 250px;
+        }
+        
 
         .card:hover {
             transform: scale(1.1);
@@ -35,14 +43,13 @@ include "../dbh.php";
             <ul class="list-group m-2">
 
 
-                <li class="list-group-item"><a href="" class="text-decoration-none text-dark">Book</a></li>
-                <li class="list-group-item"><a href="" class="text-decoration-none text-dark">Dress</a></li>
-                <li class="list-group-item"><a href="" class="text-decoration-none text-dark">Accessories</a></li>
-                <li class="list-group-item"><a href="" class="text-decoration-none text-dark">Ladies Fashion</a></li>
-                <li class="list-group-item"><a href="" class="text-decoration-none text-dark">Gentz Fashion</a></li>
-                <li class="list-group-item"><a href="" class="text-decoration-none text-dark">Book</a></li>
-                <li class="list-group-item"><a href="" class="text-decoration-none text-dark">Dress</a></li>
-                <li class="list-group-item"><a href="" class="text-decoration-none text-dark">Dress</a></li>
+                <li class="list-group-item"><a href="product_category.php?category=Womens-Fashion" class="text-decoration-none text-dark">Womens fashon</a></li>
+                <li class="list-group-item"><a href="product_category.php?category=health-and-beauty" class="text-decoration-none text-dark">Health and beauty</a></li>
+                <li class="list-group-item"><a href="product_category.php?category=electronics" class="text-decoration-none text-dark">Electronic Devices</a></li>
+                <li class="list-group-item"><a href="product_category.php?category=foods" class="text-decoration-none text-dark">Food</a></li>
+                <li class="list-group-item"><a href="product_category.php?category=books" class="text-decoration-none text-dark">Books</a></li>
+                <li class="list-group-item"><a href="product_category.php?category=sports" class="text-decoration-none text-dark">Sports & Outdoor</a></li>
+                <li class="list-group-item"><a href="product_category.php?category=baby" class="text-decoration-none text-dark">Babies & Toys</a></li>
 
 
 
@@ -96,13 +103,13 @@ include "../dbh.php";
 
                     echo "
 
-      <div class='col-lg-3 p-3'>
+      <div class='card-container col-lg-3 p-3'>
       <a class='text-dark' href='product_details.php?id=$row[product_id]' style='text-decoration: none;'>
-      <div class='cardme-4 shadow card'>
-      <img src='../Admin/images/$row[product_image]' class='p-3 img-fluid card-img-top mt-3' alt='...'>
+      <div class='cardme-4 shadow card text-center'>
+      <img src='../Admin/images/$row[product_image]' class='p-3 product-img img-fluid card-img-top mt-3' alt='...'>
       <div class='card-body'>
           <h5 class='card-title'>$row[product_name]</h5>
-          <p class='card-text'>$row[product_price]</p>
+          <p class='card-text'><span>Price: </span>$row[product_price] <span>tk</span></p>
           <a id='add-cart' href='add_cart.php?id=$row[product_id]' class='add-cart btn btn-primary btn-sm'>Add to Cart</a>
           <a href='payment_page.php?product_name=$row[product_name]&&price=$row[product_price]&&id=$row[product_id]' class='btn btn-primary btn-sm'>Buy Now</a>
       </div>

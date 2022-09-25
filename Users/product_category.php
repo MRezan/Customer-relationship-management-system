@@ -28,9 +28,9 @@ include '../navbar.php';
   
 <?php
 include_once "../dbh.php";
-$q= $_POST['q'];
+$category= $_GET['category'];
 $sql = "SELECT *
-FROM products WHERE product_name LIKE '%$q%' ";
+FROM products WHERE product_category ='$category' ";
 
 $returnObj = $conn->query($sql);
 
