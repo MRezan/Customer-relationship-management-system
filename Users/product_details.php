@@ -35,7 +35,7 @@ $product_id = $_GET['id'];
         <h1>$data[product_name]</h1>
         <p>$data[product_details]
         </p>
-        <h3>$data[product_price]</h3>
+        <h5><span>Price: </span>$data[product_price]<span>tk</span></h5>
         <div class='d-flex justify-content-between w-75'>
             <a class='btn btn-primary' href='add_cart.php?id=$data[product_id]'>Add to Cart</a>
             <a class='btn btn-primary' href='payment_page.php?id=$data[product_id]&&price=$data[product_price]&&product_name=$data[product_name]'>Buy Now</a>

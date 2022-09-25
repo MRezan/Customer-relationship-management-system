@@ -9,6 +9,8 @@ include_once "admin_navbar.php";
 ?>
 <link rel="stylesheet" href="admin_chat.css">
 
+<br>
+<br>
 
 <div class="page-content page-container bg-dark" id="page-content">
   <div class="padding">

@@ -20,6 +20,10 @@ include_once "admin_navbar.php";
   <div class="container">
     <div class="text-center">
 
+    <br>
+    <br>
+    <br>
+
     <?php
     include "../dbh.php";
     $sql="SELECT user.user_name, user.user_id, products.product_name,products.product_id
