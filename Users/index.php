@@ -83,7 +83,7 @@ include "../dbh.php";
 
             <?php
             $sql = "SELECT *
-  FROM products";
+            FROM products";
 
             $returnObj = $conn->query($sql);
 
@@ -104,7 +104,7 @@ include "../dbh.php";
           <h5 class='card-title'>$row[product_name]</h5>
           <p class='card-text'>$row[product_price]</p>
           <a id='add-cart' href='add_cart.php?id=$row[product_id]' class='add-cart btn btn-primary btn-sm'>Add to Cart</a>
-          <a href='#' class='btn btn-primary btn-sm'>Buy Now</a>
+          <a href='payment_page.php?product_name=$row[product_name]&&price=$row[product_price]&&id=$row[product_id]' class='btn btn-primary btn-sm'>Buy Now</a>
       </div>
       </div>
       </a>

@@ -25,8 +25,8 @@ session_start();
       <ul class="navbar-nav ms-auto me-5 ">
 
       <div class="nav-link">
-    <form class="d-flex">
-      <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+    <form action="search_result.php" method="POST" class="d-flex">
+      <input class="form-control me-2 rounded-pill" name="q" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
   </div>
