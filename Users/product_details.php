@@ -39,7 +39,7 @@ $product_id = $_GET['id'];
         <div class='d-flex justify-content-between w-75'>
             <a class='btn btn-primary' href='add_cart.php?id=$data[product_id]'>Add to Cart</a>
             <a class='btn btn-primary' href='payment_page.php?id=$data[product_id]&&price=$data[product_price]&&product_name=$data[product_name]'>Buy Now</a>
-            <a class='btn btn-primary' href='user_chat.php?id=$data[product_id]'>Chat</a>
+            <a class='btn btn-primary' href='suggest_chat.php?id=$data[product_id]'>Chat</a>
         </div>
 
     </div>

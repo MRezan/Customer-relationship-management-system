@@ -43,7 +43,7 @@ include "../dbh.php";
             <ul class="list-group m-2">
 
 
-                <li class="list-group-item"><a href="product_category.php?category=Womens-Fashion" class="text-decoration-none text-dark">Womens fashon</a></li>
+                <li class="list-group-item"><a href="product_category.php?category=Womens-Fashion" class="text-decoration-none text-dark">Women's fashon</a></li>
                 <li class="list-group-item"><a href="product_category.php?category=health-and-beauty" class="text-decoration-none text-dark">Health and beauty</a></li>
                 <li class="list-group-item"><a href="product_category.php?category=electronics" class="text-decoration-none text-dark">Electronic Devices</a></li>
                 <li class="list-group-item"><a href="product_category.php?category=foods" class="text-decoration-none text-dark">Food</a></li>
